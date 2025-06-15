@@ -1,0 +1,71 @@
+[0m18:34:31.144516 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x743476b0e150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7434766f6e40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7434763222a0>]}
+
+
+============================== 18:34:31.218756 | 302e7f67-4424-4d25-a286-da242e9fd17c ==============================
+[0m18:34:31.218756 [info ] [MainThread]: Running with dbt=1.9.0
+[0m18:34:31.222474 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/root/.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt init my_project', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:34:31.802705 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse logging event dictionary. Failed to parse dir field: expected string or bytes-like object, got 'PosixPath'.. Dictionary: {'dir': PosixPath('/root/.dbt')}
+[0m18:34:31.804670 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m18:34:31.867767 [debug] [MainThread]: Starter project path: /usr/local/lib/python3.12/site-packages/dbt/include/starter_project
+[0m18:34:32.000780 [info ] [MainThread]: 
+Your new dbt project "my_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:34:32.005457 [info ] [MainThread]: Setting up your profile.
+[0m18:43:33.366549 [info ] [MainThread]: Profile my_project written to /root/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m18:43:33.386981 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 523.1779, "process_in_blocks": "160", "process_kernel_time": 3.312039, "process_mem_max_rss": "92492", "process_out_blocks": "1544", "process_user_time": 8.248943}
+[0m18:43:33.392468 [debug] [MainThread]: Command `dbt init` succeeded at 18:43:33.390649 after 523.19 seconds
+[0m18:43:33.396537 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x743476410740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7434794476e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7434768ab5c0>]}
+[0m18:43:33.398797 [debug] [MainThread]: Flushing usage events
+[0m18:43:34.339231 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:07:43.758787 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x715d58ec8f80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x715d583e53a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x715d576bc9b0>]}
+
+
+============================== 19:07:43.780009 | ad56689f-68e8-4415-9067-00bbc358a4f1 ==============================
+[0m19:07:43.780009 [info ] [MainThread]: Running with dbt=1.9.0
+[0m19:07:43.781228 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': '/root/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m19:07:43.931445 [info ] [MainThread]: dbt version: 1.9.0
+[0m19:07:43.932358 [info ] [MainThread]: python version: 3.12.4
+[0m19:07:43.933256 [info ] [MainThread]: python path: /usr/local/bin/python
+[0m19:07:43.937521 [info ] [MainThread]: os info: Linux-6.6.87.1-microsoft-standard-WSL2-x86_64-with-glibc2.31
+[0m19:07:43.940864 [info ] [MainThread]: Using profiles dir at /root/.dbt
+[0m19:07:43.941829 [info ] [MainThread]: Using profiles.yml file at /root/.dbt/profiles.yml
+[0m19:07:43.942869 [info ] [MainThread]: Using dbt_project.yml file at /usr/app/dbt_project.yml
+[0m19:07:43.943945 [info ] [MainThread]: Configuration:
+[0m19:07:43.944991 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m19:07:43.946093 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m19:07:43.947166 [info ] [MainThread]: Required dependencies:
+[0m19:07:43.948093 [debug] [MainThread]: Executing "git --help"
+[0m19:07:44.023603 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone             Clone a repository into a new directory\n   init              Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add               Add file contents to the index\n   mv                Move or rename a file, a directory, or a symlink\n   restore           Restore working tree files\n   rm                Remove files from the working tree and from the index\n   sparse-checkout   Initialize and modify the sparse-checkout\n\nexamine the history and state (see also: git help revisions)\n   bisect            Use binary search to find the commit that introduced a bug\n   diff              Show changes between commits, commit and working tree, etc\n   grep              Print lines matching a pattern\n   log               Show commit logs\n   show              Show various types of objects\n   status            Show the working tree status\n\ngrow, mark and tweak your common history\n   branch            List, create, or delete branches\n   commit            Record changes to the repository\n   merge             Join two or more development histories together\n   rebase            Reapply commits on top of another base tip\n   reset             Reset current HEAD to the specified state\n   switch            Switch branches\n   tag               Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch             Download objects and refs from another repository\n   pull              Fetch from and integrate with another repository or a local branch\n   push              Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m19:07:44.025944 [debug] [MainThread]: STDERR: "b''"
+[0m19:07:44.027586 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:07:44.029181 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m19:07:44.031663 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m19:07:44.034889 [info ] [MainThread]: dbt looked for a profiles.yml file in /root/.dbt/profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m19:07:44.036791 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </usr/app/dbt_project.yml> not found
+
+[0m19:07:44.042106 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.39104858, "process_in_blocks": "82808", "process_kernel_time": 1.988848, "process_mem_max_rss": "86644", "process_out_blocks": "1488", "process_user_time": 4.176582}
+[0m19:07:44.043719 [debug] [MainThread]: Command `dbt debug` failed at 19:07:44.043380 after 0.39 seconds
+[0m19:07:44.045051 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x715d5788e1e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x715d57a84a70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x715d577c4d10>]}
+[0m19:07:44.046484 [debug] [MainThread]: Flushing usage events
+[0m19:07:44.964763 [debug] [MainThread]: An error was encountered while trying to flush usage events

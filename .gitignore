@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+.env
+.venv/
+
+# Airflow
+airflow/logs/
+airflow/airflow.db
+airflow/unittests.cfg
+airflow/.airflow*
+
+# dbt
+dbt/target/
+dbt/dbt_modules/
+dbt/logs/
+dbt/profiles.yml  # if stored locally and not in repo
+
+# PostgreSQL Docker volume (optional, if you use mounted folders)
+postgres/data/
+
+# VSCode / IDEs
+.vscode/
+.idea/
+
+# Docker
+*.pid
+*.log
+*.bak
+*.swp
+docker-compose.override.yml
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Secrets
+*.env
+secrets.env
+.env.*
+
+# Others
+*.tar.gz
+*.zip
+*.sqlite

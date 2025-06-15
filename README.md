@@ -33,7 +33,7 @@ This project implements an end-to-end data pipeline that extracts **live weather
 - Makes deployment on any environment seamless.
 
 ## 📦 Folder Structure
-
+```bash
 weather-pipeline/
 ├── airflow/ # DAGs and plugins
 ├── dbt/ # dbt models and config
@@ -42,7 +42,7 @@ weather-pipeline/
 ├── scripts/ # Python scripts to extract weather data
 ├── docker-compose.yml # Multi-container orchestration
 └── README.md # Project documentation
-
+```
 
 
 ## 🛠️ Prerequisites
@@ -64,7 +64,7 @@ docker-compose up --build
 # 3. Access tools
 # Airflow: http://localhost:8080
 # Superset: http://localhost:8088
-# PostgreSQL: localhost:5432 (user: postgres / password: postgres)
+# PostgreSQL: localhost:5432 (user: db_user / password: db_password)
 ```
 
 
